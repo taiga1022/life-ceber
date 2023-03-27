@@ -1,3 +1,4 @@
+/* index */
 #body-index{
     margin: 0;
     background: url("./img/back.png") ;
@@ -70,6 +71,55 @@ img{
 #tabcontrol a:hover{
     background-color: #48A969 ;
 }
+
+/* ローディング */
+.loading{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: blink 1s linear forwards;
+    animation-delay: 1s;
+}
+
+
+
+.load-blink {
+    animation: blink 4s linear infinite;
+    background-color: #fff;
+    z-index: 999;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+/* 中略 */
+
+.load-spin {
+    animation: rotate2 2s linear ;
+}
+
+@keyframes rotate2 {
+    to {
+        transform: rotate(-300deg);
+    }
+    100%{
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
 
 /* edit&create */
 body{
