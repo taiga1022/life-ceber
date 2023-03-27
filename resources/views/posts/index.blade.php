@@ -8,7 +8,7 @@
     <link href="./reset.css"rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="./style2.css">
 </head>
-<body>
+<body id="body-index">
     <p id="tabcontrol">
         <a href="#tabpage-all">all</a>
         <a href="#tabpage-restaurant">restaurant</a>
