@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="./style2.css">
 </head>
 <body id="body-index">
+    <div id="sample08" class="loading">
+        <svg width="200" height="200" class="load-spin">
+            <path id="upperArc" d="M 25 100
+                A 50 50 0 1 1 175 100
+                " stroke="transparent" fill="transparent" />
+            <path id="lowerArc" d="M 175 100
+                A 50 50 0 1 1 25 100
+                " stroke="transparent" fill="transparent" />
+            <text font-size="16pt" class="load-blink" fill="#48A969">
+                <textPath xlink:href="#upperArc">
+                    Life-Ceber
+                </textPath>
+                <textPath xlink:href="#lowerArc">
+                    Life-Ceber
+                </textPath>
+            </text>
+        </svg>
+    </div>
     <p id="tabcontrol">
         <a href="#tabpage-all">all</a>
         <a href="#tabpage-restaurant">restaurant</a>
