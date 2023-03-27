@@ -123,4 +123,84 @@ img{
     margin-top: 10%;
 }
 
+/* show */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color:#93D6B1 ;
+
+}
+
+.show-img{
+    width: 90%;
+    margin-top: 2vh;
+
+}
+
+.show-container{
+    text-align: center;
+
+}
+
+h2{
+    font-size: 15px;
+    margin-bottom: 2vh;
+}
+
+.show-line{
+    margin: auto;
+    border-width:1px;
+    width: 70%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.show-text{
+    font-size: 18px;
+    width:90vw;
+    height: 20vh;
+    border: solid 1px;
+    overflow: scroll;
+    margin: auto;
+    margin-top: 2vh;
+    background-color: white;
+    border: none;
+    
+}
+
+.s1 {
+    text-align: right; 
+}
+
+.s2 {
+    list-style: none;
+    text-align: left;
+    margin-left: 50%;  
+}
+
+.show-heart{
+    font-size: 25px;
+    margin-left: 30vw;
+}
+
+.show-edit,.show-delete{
+    background-color: white;
+    width: 25vw;
+    height: 4vh;
+    padding-top: 1vh;
+    color: black;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+    list-style: none;
+}
+
+.under{
+    display: flex;
+    padding: 7vw;
+
+}
+
+.show-edit{
+    margin-right: 1vw;
+}
