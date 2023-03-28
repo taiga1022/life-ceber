@@ -44,7 +44,7 @@
     @foreach ($posts as $post)
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="#">
+                <a href="{{ route('posts.show', $post->id) }}">
                     {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
                     {{ $post -> image_at }}
                 </a>
@@ -55,7 +55,7 @@
     @foreach ($posts_restaurant as $post_restaurant)
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
-                <a href="#">
+                <a href="{{ route('posts.show', $post_restaurant->id) }}">
                     {{ $post_restaurant -> image_at }}
                 </a>
                 {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
@@ -66,7 +66,7 @@
     @foreach ($posts_sightseeing as $post_sightseeing)
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
-                <a href="#">
+                <a href="{{ route('posts.show', $post_sightseeing->id) }}">
                     {{ $post_sightseeing -> image_at }}
                 </a>
                 {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
@@ -77,7 +77,7 @@
     @foreach ($posts_others as $post_others)
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
-                <a href="#">
+                <a href="{{ route('posts.show', $post_others->id) }}">
                     {{ $post_others -> image_at }}
                 </a>
                 {{-- <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""> --}}

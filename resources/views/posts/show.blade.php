@@ -10,16 +10,16 @@
 <body>
     <div class="show-container">
         <img class="show-img" src="./photo/IMG-4835.JPG" alt="">
-        <h1>titletitletitle</h1>
-        <h2>address</h2>
+        <h1>{{ $post -> place }}</h1>
+        <h2>{{ $post -> address }}</h2>
         <hr noshade class="show-line" >
         <div class="show-text">     
-            テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+            {{ $post -> comment }}
         </div>
         <div class="s1">
             <ul class="s2">
-            <li>カテゴリー：restrant</li>
-            <li>値段：$$$</li>
+            <li>カテゴリー：{{ $post -> genre }}</li>
+            <li>値段：{{ $post -> price }}</li>
             </ul>
         </div>
         <div class="under">
