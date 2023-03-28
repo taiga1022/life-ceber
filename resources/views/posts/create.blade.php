@@ -1,5 +1,5 @@
 @extends('layouts.app')
-    <main>
+    {{-- <main> --}}
         <a href="#"><p class="create-back">←戻る</p></a>
         <div class="create-container">
             <h3>新規投稿/NewPost</h3>
@@ -37,8 +37,12 @@
             <p class="create-image">写真を選択</p>
             <button type="submit" class="btn-create">投稿/Post</button>
         </div>
-        <a href="./img/necessary/guide.png"><p class="create-sample">書き方参照→</p></a>
-    </main>
+
+        <div class="img-contents">
+         <p class="guide-p">書き方参照</p>
+         <img src="../img/necessary/guide.png" alt="">
+        </div> 
+    {{-- </main> --}}
 
 {{-- <style>
     .create-container {
