@@ -41,27 +41,91 @@
         <a href="#tabpage-others">others</a>
     </p>
     <div id="tabbody">
+    @foreach ($posts as $post)
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="#"><img class="img-ex" src="./img/example/pancit.jpeg" alt=""></a><img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/pine.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/pine.jpeg" alt=""><img class="img-ex" src="./img/example/pine.jpeg" alt=""><img class="img-ex" src="./img/example/pine.jpeg" alt=""><img class="img-ex" src="./img/example/pine.jpeg" alt="">
+                <a href="#">
+                    {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
+                    {{ $post -> image_at }}
+                </a>
+                {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_restaurant as $post_restaurant)
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
-                <img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt=""><img class="img-ex" src="./img/example/krend.jpeg" alt="">
+                <a href="#">
+                    {{ $post_restaurant -> image_at }}
+                </a>
+                {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
+
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_sightseeing as $post_sightseeing)
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
-                <img class="img-ex" src="./img/example/photo.jpeg" alt=""><img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/photo.jpeg" alt=""><img class="img-ex" src="./img/example/photo.jpeg" alt="">
+                <a href="#">
+                    {{ $post_sightseeing -> image_at }}
+                </a>
+                {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
+
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_others as $post_others)
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
-                <img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/pancit.jpeg" alt=""><img class="img-ex" src="./img/example/pancit.jpeg" alt="">
+                <a href="#">
+                    {{ $post_others -> image_at }}
+                </a>
+                {{-- <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
     </div>
+    @endforeach
+
+    {{-- <script type="text/javascript">
+
+        var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
+        var pages = document.getElementById('tabbody').getElementsByTagName('div');
+     
+        function changeTab() { --}}
+           {{-- // ▼href属性値から対象のid名を抜き出す
+           var targetid = this.href.substring(this.href.indexOf('#')+1,this.href.length);
+     
+           // ▼指定のタブページだけを表示する
+           for(var i=0; i<pages.length; i++) {
+              if( pages[i].id != targetid ) {
+                 pages[i].style.display = "none";
+              }
+              else {
+                 pages[i].style.display = "block";
+              }
+           }
+      --}}
+           {{-- // ▼クリックされたタブを前面に表示する
+           for(var i=0; i<tabs.length; i++) {
+              tabs[i].style.zIndex = "0";
+           }
+           this.style.zIndex = "10";
+     
+           // ▼ページ遷移しないようにfalseを返す
+           return false;
+        }
+     
+        // ▼すべてのタブに対して、クリック時にchangeTab関数が実行されるよう指定する
+        for(var i=0; i<tabs.length; i++) {
+           tabs[i].onclick = changeTab;
+        }
+     
+        // ▼最初は先頭のタブを選択
+        tabs[0].onclick();
+      --}}
+     {{-- </script> --}}
+     {{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> --}}
     
 </body>
 @endsection

@@ -12,7 +12,13 @@ class PostController extends Controller
     {   
         $posts = Post::all();
 
-        return view('posts.index', ['posts'=>$posts]);
+        $posts_restaurant = Post::where('genre', 'restaurant')->get();
+
+        $posts_sightseeing = Post::where('genre', 'sightseeing')->get();
+
+        $posts_others = Post::where('genre', 'others')->get();
+
+        return view('posts.index', ['posts'=>$posts, 'posts_restaurant'=>$posts_restaurant, 'posts_sightseeing'=>$posts_sightseeing, 'posts_others'=>$posts_others]);
 
         // dd($post);
     }
