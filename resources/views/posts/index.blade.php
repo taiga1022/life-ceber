@@ -41,27 +41,48 @@
         <a href="#tabpage-others">others</a>
     </p>
     <div id="tabbody">
+    @foreach ($posts as $post)
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="#"><img src="./img/example/pancit.jpeg" alt=""></a><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt="">
+                <a href="#">
+                    {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
+                    {{ $post -> image_at }}
+                </a>
+                {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_restaurant as $post_restaurant)
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
-                <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt="">
+                <a href="#">
+                    {{ $post_restaurant -> image_at }}
+                </a>
+                {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_sightseeing as $post_sightseeing)
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
-                <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt="">
+                <a href="#">
+                    {{ $post_sightseeing -> image_at }}
+                </a>
+                {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
+    @endforeach
+    @foreach ($posts_others as $post_others)
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
-                <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt="">
+                <a href="#">
+                    {{ $post_others -> image_at }}
+                </a>
+                {{-- <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
     </div>
+    @endforeach
 
     {{-- <script type="text/javascript">
 
