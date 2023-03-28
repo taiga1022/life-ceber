@@ -59,6 +59,7 @@
                     {{ $post_restaurant -> image_at }}
                 </a>
                 {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
+
             <!-- </div> -->
         </div>
     @endforeach
@@ -69,6 +70,7 @@
                     {{ $post_sightseeing -> image_at }}
                 </a>
                 {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
+
             <!-- </div> -->
         </div>
     @endforeach

@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新規投稿</title>
-    <link rel="stylesheet" href="public\css\reset.css">
-</head>
-
-<body>
+@extends('layouts.app')
     <main>
-        <p class="create-back">←戻る</p>
+        <a href="#"><p class="create-back">←戻る</p></a>
         <div class="create-container">
             <h3>新規投稿/NewPost</h3>
             <div class="create-title create-name">名前</div>
@@ -18,27 +8,39 @@
             <div class="create-title create-way">道のり</div>
             <input type="text" class="create-input" placeholder="住所もしくは目印">
             <div class="create-title create-categories-header">カテゴリー</div>
-                <ul class="create-categories">
-                    <li>restaurant</li>
-                    <li class="create-sightseeing">sightseeing</li>
-                    <li>others</li>
-                </ul>
+            <div class="kind-box">
+                <input type="radio" name="radio1" id="res" class="radio1" value="r1">
+                <label for="res">restaurant</label>
+
+                <input type="radio" name="radio1" id="sight" class="radio1" value="r1">
+                <label for="sight">sightseeing</label>
+
+                <input type="radio" name="radio1" id="others" class="radio1" value="r1">
+                <label for="others">others</label>
+            </div>
             <div class="create-title create-prices-header">価格</div>
-                <ul class="create-prices">
+            <div class="pp-box">
+                <input type="radio" name="radio" id="box-p" class="radio" value="r">
+                <label for="box-p">P</label>
+                <input type="radio" name="radio" id="box-pp" class="radio" value="r">
+                <label for="box-pp">PP</label>
+                <input type="radio" name="radio" id="box-ppp" class="radio" value="r">
+                <label for="box-ppp">PPP</label>
+            </div>
+                {{-- <ul class="create-prices">
                     <li>P</li>
                     <li class="create-pp">PP</li>
                     <li>PPP</li>
-                </ul>
+                </ul> --}}
             <div class="create-title create-content">内容</div>
             <textarea name="" placeholder="味の感想や雰囲気など" ></textarea>
             <p class="create-image">写真を選択</p>
-            <input type="submit" class="create-submit" value="投稿/Post">
+            <button type="submit" class="btn-create">投稿/Post</button>
         </div>
-        <p class="create-sample">書き方参照→</p>
+        <a href="./img/necessary/guide.png"><p class="create-sample">書き方参照→</p></a>
     </main>
-</body>
 
-<style>
+{{-- <style>
     .create-container {
         text-align: center;
     }
@@ -195,4 +197,4 @@
         margin: 0 36px 36px 0;
     }
 </style>
-</html>
+</html> --}}
