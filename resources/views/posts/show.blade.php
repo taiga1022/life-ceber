@@ -18,15 +18,19 @@
         </div>
         <div class="s1">
             <ul class="s2">
-            <li>カテゴリー：{{ $post -> genre }}</li>
-            <li>値段：{{ $post -> price }}</li>
+                <li>カテゴリー：{{ $post -> genre }}</li>
+                <li>値段：{{ $post -> price }}</li>
             </ul>
         </div>
-        <div class="under">
-            <div class="show-edit">編集</div>
-            <div class="show-delete">削除</div>
-            <div class="show-heart">♡</div>
-        </div>
+            <div class="under">
+                <a href="{{ route('posts.edit', $post->id) }}" class="#">編集</a>
+                <form action="{{ route('posts.destroy', $post->id) }}" method='post'>
+                    @csrf
+                    @method('delete')
+                    <input type="submit" value='削除' class="show-delete" onclick='return confirm("本当に削除しますか？");'>
+                </form>
+                <div class="show-heart">♡</div>
+            </div>
     </div>
 
 
