@@ -6,15 +6,17 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="">
   <title>Document</title>
-  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
 </head>
 
 
 <body>
-  <header>
+  {{-- <header>
     <div class="app1">LOGIN</div>
     <div class="app2">SIGNUP</div>
-  </header>
+  </header> --}}
     @yield('content')
   <footer>
     Copyright &copy; Life-Ceber.
