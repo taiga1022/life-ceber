@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+{{-- @extends('layouts.main') --}}
+@extends('layouts.underBar')
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +13,7 @@
     <title>Document</title>
     <link href="./reset.css"rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="./style2.css">
-</head>
+</head> --}}
 <body id="body-index">
     <div id="sample08" class="loading">
         <svg width="200" height="200" class="load-spin">
@@ -27,6 +33,7 @@
             </text>
         </svg>
     </div>
+    @section('content')
     <p id="tabcontrol">
         <a href="#tabpage-all">all</a>
         <a href="#tabpage-restaurant">restaurant</a>
@@ -36,22 +43,22 @@
     <div id="tabbody">
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="#"><img src="./img/pancit.jpeg" alt=""></a><img src="./img/pancit.jpeg" alt=""><img src="./img/pine.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/pine.jpeg" alt=""><img src="./img/pine.jpeg" alt=""><img src="./img/pine.jpeg" alt=""><img src="./img/pine.jpeg" alt="">
+                <a href="#"><img src="./img/example/pancit.jpeg" alt=""></a><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt="">
             <!-- </div> -->
         </div>
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
-                <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt="">
+                <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt="">
             <!-- </div> -->
         </div>
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
-                <img src="./img/photo.jpeg" alt=""><img src="./img/photo.jpeg" alt=""><img src="./img/photo.jpeg" alt=""><img src="./img/photo.jpeg" alt="">
+                <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt="">
             <!-- </div> -->
         </div>
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
-                <img src="./img/pancit.jpeg" alt=""><img src="./img/pancit.jpeg" alt=""><img src="./img/pancit.jpeg" alt=""><img src="./img/pancit.jpeg" alt="">
+                <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt="">
             <!-- </div> -->
         </div>
     </div>
@@ -94,6 +101,8 @@
         tabs[0].onclick();
      
      </script>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     
 </body>
-</html>
+@endsection
