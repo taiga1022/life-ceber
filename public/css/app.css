@@ -4555,6 +4555,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  /* background-color: #48A969; */
 }
 
 .navbar-brand {
@@ -7080,8 +7081,9 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
+/* ヘッダーの色 */
 .bg-white {
-  background-color: #fff !important;
+  background-color: #48A969 !important;
 }
 
 .bg-transparent {
@@ -8332,7 +8334,7 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem #48A969 !important;
 }
 
 .shadow {

@@ -46,7 +46,7 @@
             <!-- <div class="all-container"> -->
                 <a href="#">
                     {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
-                    {{ $post -> image_at }}
+                    {{ $post ->image_at }}
                 </a>
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
@@ -56,7 +56,7 @@
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
                 <a href="#">
-                    {{ $post_restaurant -> image_at }}
+                    {{ $post_restaurant ->image_at }}
                 </a>
                 {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
 
@@ -67,7 +67,7 @@
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
                 <a href="#">
-                    {{ $post_sightseeing -> image_at }}
+                    {{ $post_sightseeing ->image_at }}
                 </a>
                 {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
 
@@ -78,7 +78,7 @@
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
                 <a href="#">
-                    {{ $post_others -> image_at }}
+                    {{ $post_others ->image_at }}
                 </a>
                 {{-- <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""> --}}
             <!-- </div> -->

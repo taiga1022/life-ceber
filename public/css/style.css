@@ -1,7 +1,7 @@
 /* index */
 #body-index{
     margin: 0;
-    background: url("./img/necessary/back.png") ;
+    background: url("../img/necessary/back.png") ;
     width: 100vw;
     min-height: 100vh;
     /* position: fixed; */
