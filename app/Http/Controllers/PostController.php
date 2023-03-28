@@ -31,8 +31,16 @@ class PostController extends Controller
     function store(Request $request)
     {
         $post = new Post;
-        $post -> title = $request -> title;
-        $post -> body = $request -> body;
+        // $post -> title = $request -> title;
+        // $post -> body = $request -> body;
+        
+        $post -> image_at = $request -> image_at;
+        $post -> place = $request -> place;
+        $post -> genre = $request -> genre;
+        $post -> address = $request -> address;
+        $post -> price = $request -> price;
+        $post -> comment = $request -> comment;
+
         $post -> user_id = Auth::id();
         $post -> save();
         return redirect()->route('posts.index');
@@ -40,6 +48,8 @@ class PostController extends Controller
 
     function show($id)
     {
+        $post = Post::find($id);
+
         return view('posts.show', ['post'=>$post]);
     }
 
@@ -52,8 +62,15 @@ class PostController extends Controller
     function update(Request $request, $id)
     {
         $post = Post::find($id);
-        $post -> title = $request -> title;
-        $post -> body = $request -> body;
+        // $post -> title = $request -> title;
+        // $post -> body = $request -> body;
+        $post -> image_at = $request -> image_at;
+        $post -> place = $request -> place;
+        $post -> genre = $request -> genre;
+        $post -> address = $request -> address;
+        $post -> price = $request -> price;
+        $post -> comment = $request -> comment;
+
         $post -> save();
         return view('posts.show', compact('post'));
     }
