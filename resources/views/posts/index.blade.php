@@ -63,13 +63,13 @@
         </div>
     </div>
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
 
         var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
         var pages = document.getElementById('tabbody').getElementsByTagName('div');
      
-        function changeTab() {
-           // ▼href属性値から対象のid名を抜き出す
+        function changeTab() { --}}
+           {{-- // ▼href属性値から対象のid名を抜き出す
            var targetid = this.href.substring(this.href.indexOf('#')+1,this.href.length);
      
            // ▼指定のタブページだけを表示する
@@ -81,8 +81,8 @@
                  pages[i].style.display = "block";
               }
            }
-     
-           // ▼クリックされたタブを前面に表示する
+      --}}
+           {{-- // ▼クリックされたタブを前面に表示する
            for(var i=0; i<tabs.length; i++) {
               tabs[i].style.zIndex = "0";
            }
@@ -99,10 +99,10 @@
      
         // ▼最初は先頭のタブを選択
         tabs[0].onclick();
-     
-     </script>
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      --}}
+     {{-- </script> --}}
+     {{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> --}}
     
 </body>
 @endsection
