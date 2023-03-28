@@ -11005,15 +11005,19 @@ footer{
   position: fixed;
   bottom: 0%;
   width: 100%;
+  z-index: 990;
 }
 
-img{
-  width: 7vh;
-  height: 7vh;
+.under1{
+  width: 10vh;
+  height: 10vh;
   padding: 15px;
 }
 
 .writing{
+  width: 10vh;
+  height: 10vh;
+  padding: 15px;
   margin-top: 10%;
 }
 
