@@ -82,4 +82,11 @@ class PostController extends Controller
         $post -> delete();
         return redirect() -> route('posts.index');
     }
+
+    function mypg()
+    {
+        $posts = Post::where('user_id', Auth::user()->id)->get();
+
+        return view('posts.mypg', ['posts'=>$posts]);
+    }
 }
