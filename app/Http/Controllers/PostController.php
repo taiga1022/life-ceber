@@ -30,6 +30,7 @@ class PostController extends Controller
 
     function store(Request $request)
     {
+        // dd($request);
         $post = new Post;
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
