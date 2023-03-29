@@ -6,27 +6,29 @@
             <form action="{{ route('posts.store') }}" method='POST'>
             @csrf
                 <div class="create-title create-name">名前</div>
-                <input type="text" class="create-input" placeholder="店名・商品名・施設名など">
+                <input type="text" name='place' class="create-input" placeholder="店名・商品名・施設名など">
                 <div class="create-title create-way">道のり</div>
-                <input type="text" class="create-input" placeholder="住所もしくは目印">
+                <input type="text" name='address' class="create-input" placeholder="住所もしくは目印">
                 <div class="create-title create-categories-header">カテゴリー</div>
                 <div class="kind-box">
-                    <input type="radio" name="radio1" id="res" class="radio1" value="r1">
+                    <input type="radio" name="genre" id="res" class="radio1" value="restaurant">
                     <label for="res">restaurant</label>
 
-                    <input type="radio" name="radio1" id="sight" class="radio1" value="r1">
+                    <input type="radio" name="genre" id="sight" class="radio1" value="sightseeing">
                     <label for="sight">sightseeing</label>
 
-                    <input type="radio" name="radio1" id="others" class="radio1" value="r1">
+                    <input type="radio" name="genre" id="others" class="radio1" value="others">
                     <label for="others">others</label>
                 </div>
                 <div class="create-title create-prices-header">価格</div>
                 <div class="pp-box">
-                    <input type="radio" name="radio" id="box-p" class="radio" value="r">
+                    <input type="radio" name="price" id="box-p" class="radio" value="P">
                     <label for="box-p">P</label>
-                    <input type="radio" name="radio" id="box-pp" class="radio" value="r">
+
+                    <input type="radio" name="price" id="box-pp" class="radio" value="PP">
                     <label for="box-pp">PP</label>
-                    <input type="radio" name="radio" id="box-ppp" class="radio" value="r">
+
+                    <input type="radio" name="price" id="box-ppp" class="radio" value="PPP">
                     <label for="box-ppp">PPP</label>
                 </div>
                     {{-- <ul class="create-prices">
@@ -35,7 +37,7 @@
                         <li>PPP</li>
                     </ul> --}}
                 <div class="create-title create-content">内容</div>
-                <textarea name="" placeholder="味の感想や雰囲気など" ></textarea>
+                <textarea name="comment" placeholder="味の感想や雰囲気など" ></textarea>
                 <p class="create-image">写真を選択</p>
                 <button type="submit" class="btn-create">投稿/Post</button>
             </form>
