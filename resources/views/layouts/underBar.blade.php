@@ -12,7 +12,7 @@
         <a href="#"><img class="under1" src="./img/necessary/philippine-peso (4).png" alt=""></a>
         <a href="#"><img class="under1" src="./img/necessary/book.png" alt=""></a>
         <a href="{{ route('posts.create') }}"><img class="writing" src="./img/necessary/writing.png" alt=""></a>
-        <a href="#"><img class="under1" src="./img/necessary/user (1).png" alt=""></a>
+        <a href="{{ route('posts.mypg') }}"><img class="under1" src="./img/necessary/user (1).png" alt=""></a>
     </div>
     
 </body>

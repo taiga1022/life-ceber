@@ -28,14 +28,19 @@
            </div>
         </div>
      </label>
+     @foreach ($posts as $post)
      <div id="pic">
         <!-- <div class="rest-container"> -->
-            <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt="">
+            <a href="{{ route('posts.show', $post->id) }}">
+                {{ $post ->image_at }}
+            </a>
+            {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""> --}}
         <!-- </div> -->
         <div class="close-btn">
             <!-- <p class="close">close</p> あとで時間があったらcloseボタン押したら閉じる追加-->
         </div>
     </div>
+    @endforeach
 
 
      <input id="check-b" type="checkbox" class="check">
