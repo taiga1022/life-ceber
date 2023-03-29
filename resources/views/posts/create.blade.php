@@ -1,6 +1,6 @@
 @extends('layouts.app')
     {{-- <main> --}}
-        <a href="#"><p class="create-back">←戻る</p></a>
+        <a href="{{ route('posts.index') }}"><p class="create-back">←戻る</p></a>
         <div class="create-container">
             <h3>新規投稿/NewPost</h3>
             <div class="create-title create-name">名前</div>
