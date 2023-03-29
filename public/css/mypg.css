@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    /* display: flex; */
+    color: white;
+    background-color:#48A969;
+    width: 100vw;
+    height: 7vh;
+}
+header h1{
+    font-weight: 100;
+    text-align:center
+}
+
+.mypg-header{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 7vh;
+    margin: 0 10px 0 10px;
+}
+
+
+body{
+    margin: 0;
+    background: url("./img/back.png") ;
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+
+.check{
+    display: none;
+}
+
+
+.mypg-container{
+   /* background-color: #ff9158; */
+   text-align: center;
+}
+/* 通常時表示されるテキスト */
+.label{
+    background: url(./img/gal.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    /* margin-bottom: 10px; */
+    width: 290px;
+    height: 190px;
+    margin: 20px auto 0 auto;
+    /* padding: 20px; */
+  }
+
+
+  .see-more{
+    font-size: 20px;
+  }
+  .see-more:hover{
+    color: aquamarine;
+  }
+
+  .center{
+    margin: 50px 0 20px 0;
+  }
+  
+  /* クリック時に表示されるテキスト */
+  #pic{
+    background: rgba(72,169,105,0.6);
+    align-items: center;
+    margin-bottom: 10px;
+    /*通常時は見えなくする*/
+    overflow: hidden;
+    /*  通常時は高さ0を指定  */
+    height: 0;
+    width: 290px;
+    transition: 0.5s;
+    margin:auto;
+  
+  }
+  
+  /* クリック時のスタイル */
+  .check:checked + .label + #pic{
+    height: auto;
+    width: 290px;
+    background-color: rgba(72,169,105,0.6);
+    /* padding: 20px; */
+  }
+
+  img{
+    width: 133px;
+    height: 133px;
+    margin: 6px 6px 6px 6px;
+}
+
+#pic{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
