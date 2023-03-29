@@ -1,4 +1,5 @@
 @extends('layouts.underBar')
+@extends('layouts.sub')
 
 <!DOCTYPE html>
 <html lang="en">
