@@ -62,6 +62,8 @@ class PostController extends Controller
 
     function update(Request $request, $id)
     {
+
+        dd($request);
         $post = Post::find($id);
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
