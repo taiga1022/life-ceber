@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LikeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -35,3 +36,8 @@ Route::get('/posts/{id}/edit', 'PostController@edit')->name('posts.edit');
 Route::put('/posts/{id}', 'PostController@update')->name('posts.update');
 
 Route::delete('/posts/{id}', 'PostController@destroy')->name('posts.destroy');
+
+// いいねを作成
+Route::get('/posts/{post_id}favorites','LikeController@store');
+// いいねを取り消す
+Route::get('/favorites/{post_id}','LikeController@destroy');
