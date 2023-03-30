@@ -30,7 +30,7 @@ class PostController extends Controller
 
     function store(Request $request)
     {
-        // dd($request);
+        dd($request);
         $post = new Post;
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
@@ -62,9 +62,8 @@ class PostController extends Controller
 
     function update(Request $request, $id)
     {
-
-        dd($request);
         $post = Post::find($id);
+        // dd($request);
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
         $post -> image_at = $request -> image_at;
@@ -75,7 +74,8 @@ class PostController extends Controller
         $post -> comment = $request -> comment;
 
         $post -> save();
-        return view('posts.show', compact('post'));
+        
+        return redirect()->route('posts.show');
     }
 
     function destroy($id)
