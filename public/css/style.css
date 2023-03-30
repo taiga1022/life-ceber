@@ -447,6 +447,7 @@ h2{
     padding-top: 1vh;
     color: black;
     font-size: 15px;
+    border: none;
     border-radius: 8px;
     box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
     list-style: none;
