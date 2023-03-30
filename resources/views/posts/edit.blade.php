@@ -13,26 +13,30 @@
         <p class="create-back">←戻る</p>
         <div class="create-container">
             <h3>編集/Edit</h3>
-            <div class="create-title create-name">名前</div>
-            <input type="text" class="create-input" placeholder="店名・商品名・施設名など">
-            <div class="create-title create-way">道のり</div>
-            <input type="text" class="create-input" placeholder="住所もしくは目印">
-            <div class="create-title create-categories-header">カテゴリー</div>
-                <ul class="create-categories">
-                    <li>restaurant</li>
-                    <li class="create-sightseeing">sightseeing</li>
-                    <li>others</li>
-                </ul>
-            <div class="create-title create-prices-header">価格</div>
-                <ul class="create-prices">
-                    <li>P</li>
-                    <li class="create-pp">PP</li>
-                    <li>PPP</li>
-                </ul>
-            <div class="create-title create-content">内容</div>
-            <textarea name="" placeholder="味の感想や雰囲気など" ></textarea>
-            <p class="create-image">写真を選択</p>
-            <input type="submit" class="create-submit" value="更新">
+            <form action="{{ route('posts.update', $post->id) }}" method="POST">
+                @csrf
+                @method('put')
+                    <div class="create-title create-name">名前</div>
+                    <input type="text" name='place' class="create-input" value="{{ $post->place }}" placeholder="店名・商品名・施設名など">
+                    <div class="create-title create-way">道のり</div>
+                    <input type="text" name='address' class="create-input" value="{{ $post->address }}" placeholder="住所もしくは目印">
+                    <div class="create-title create-categories-header">カテゴリー</div>
+                        <ul class="create-categories">
+                            <li>restaurant</li>
+                            <li class="create-sightseeing">sightseeing</li>
+                            <li>others</li>
+                        </ul>
+                    <div class="create-title create-prices-header">価格</div>
+                        <ul class="create-prices">
+                            <li>P</li>
+                            <li class="create-pp">PP</li>
+                            <li>PPP</li>
+                        </ul>
+                    <div class="create-title create-content">内容</div>
+                    <textarea name="comment" placeholder="味の感想や雰囲気など" >{{ $post->comment }}</textarea>
+                    <p class="create-image">写真を選択</p>
+                <input type="submit" class="create-submit" value="更新">
+            </form>
         </div>
     </main>
 </body>
