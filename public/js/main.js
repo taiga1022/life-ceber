@@ -34,5 +34,3 @@
         tabs[0].onclick();
 
       //   createの画像表示
-
-      
