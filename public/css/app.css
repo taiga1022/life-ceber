@@ -62,6 +62,7 @@ main,
 nav,
 section {
   display: block;
+
 }
 
 body {
@@ -11034,5 +11035,178 @@ footer{
 }
 
 
-/* index.blade.php */
+/* indexの付箋部分 */
+.stickers{
+  height: 350px;
+  /* background-color: pink; */
+  margin-bottom: 10px;
+}
+.bal{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.8s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.boh{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 5%;
+  top: 16%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 0.3s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.ih{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 3%;
+  top: 12%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.5s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.ils{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 1%;
+  top: 28%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.9s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.mall{
+  width: 100px;
+  height: 73px;
+  position: absolute;
+  right: 4%;
+  top: 38%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.8s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.map{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 2%;
+  top: 35%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 0.8s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.moji{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 30%;
+  top: 44%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.pc{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 2.0s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.todo{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 4%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.2s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.hw{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 25%;
+  top: 30%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 0.5s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+.sm{
+  width: 100px;
+  height: 72px;
+  position: absolute;
+  right: 25%;
+  top: 12%;
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 1.5s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+
+.main-logo{
+  width: 240px;
+  height: 130px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  transform: rotate(-3deg);
+  opacity: 0;/* ここを追加 */
+  animation-duration: 2s;
+  animation-delay : 2.2s;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+  background-color: #73D494;
+}
 
