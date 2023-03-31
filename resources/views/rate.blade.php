@@ -7,10 +7,16 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($exchangeRates as $currency => $rate)
+        {{-- @foreach($exchangeRates as $currency => $rate)
             <tr>
                 <td>{{ $currency }}</td>
                 <td>{{ $rate }}</td>
+            </tr>
+        @endforeach --}}
+        @foreach($exchangeRates as $currency => $rate)
+            <tr>
+                <td>{{ $currency }}</td>
+                <td>{{ round($rate/$exchangeRates['JPY'],2) }}</td>
             </tr>
         @endforeach
     </tbody>
