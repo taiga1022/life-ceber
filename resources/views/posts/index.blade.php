@@ -63,6 +63,7 @@
             <!-- <div class="all-container"> -->
                 <a href="{{ route('posts.show', $post->id) }}">
                     {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
+                    <img src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
                     {{ $post ->image_at }}
                 </a>
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}

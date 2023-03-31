@@ -34,8 +34,11 @@ class PostController extends Controller
         $post = new Post;
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
+
+        $image_at = request()->file('image_at')->getClientOriginalName();
+        request()->file('image_at')->storeAs('public/images',$image_at);        
         
-        $post -> image_at = $request -> image_at;
+        $post -> image_at = $image_at;
         $post -> place = $request -> place;
         $post -> genre = $request -> genre;
         $post -> address = $request -> address;
