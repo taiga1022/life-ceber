@@ -61,11 +61,11 @@
     @foreach ($posts as $post)
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="{{ route('posts.show', $post->id) }}">
+           <a href="{{ route('posts.show', $post->id) }}">
                     {{-- <img class="img-ex" src="./img/example/pancit.jpeg" alt=""> --}}
-                    <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
+           <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
                     {{-- {{ $post ->image_at }} --}}
-                </a>
+           </a>
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
