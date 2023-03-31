@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="mypg-header">
-            <h2>←</h2>
+            <a href="{{ route('posts.index') }}"><p class="backtomain">←戻る</p></a>
             <h1>my page</h1>
             <h1></h1>
         </div>
