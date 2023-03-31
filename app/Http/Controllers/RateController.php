@@ -12,6 +12,6 @@ class RateController extends Controller
         $apiKey = 'c01bfa69ed2d46eeb741b559f847ebf0';
         $response = Http::get("https://openexchangerates.org/api/latest.json?app_id=$apiKey&symbols=PHP,JPY");
         $exchangeRates = $response->json()['rates'];
-        return view('exchange_rate', compact('exchangeRates'));
+        return view('rate', compact('exchangeRates'));
     }
 }
