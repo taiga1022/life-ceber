@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.noheader')
     <main>
         <a href="{{ route('posts.index') }}"><p class="create-back">←戻る</p></a>
         <div class="create-container">
