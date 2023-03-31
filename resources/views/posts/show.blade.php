@@ -5,7 +5,8 @@
 {{-- @extends('layouts.underBar') --}}
 
     <div class="show-container">
-        <img class="show-img" src="./photo/IMG-4835.JPG" alt="">
+        <img class="show-img" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">                    
+        {{-- <img class="show-img" src="./photo/IMG-4835.JPG" alt=""> --}}
         <h1>{{ $post -> place }}</h1>
         <h2>{{ $post -> address }}</h2>
         <hr noshade class="show-line" >

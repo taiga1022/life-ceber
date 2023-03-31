@@ -62,8 +62,9 @@
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
                 <a href="{{ route('posts.show', $post->id) }}">
-                    {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
-                    {{ $post ->image_at }}
+                    {{-- <img class="img-ex" src="./img/example/pancit.jpeg" alt=""> --}}
+                    <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
+                    {{-- {{ $post ->image_at }} --}}
                 </a>
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
@@ -73,7 +74,8 @@
         <div id="tabpage-restaurant">
             <!-- <div class="rest-container"> -->
                 <a href="{{ route('posts.show', $post_restaurant->id) }}">
-                    {{ $post_restaurant -> image_at }}
+                    <img class="img-ex" src="{{ asset('storage/images/' . $post_restaurant->image_at) }}" alt="">
+                    {{-- {{ $post_restaurant -> image_at }} --}}
                 </a>
                 {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""> --}}
 
@@ -84,7 +86,8 @@
         <div id="tabpage-sightseeing">
             <!-- <div class="ss-container"> -->
                 <a href="{{ route('posts.show', $post_sightseeing->id) }}">
-                    {{ $post_sightseeing -> image_at }}
+                    <img class="img-ex" src="{{ asset('storage/images/' . $post_sightseeing->image_at) }}" alt="">                    
+                    {{-- {{ $post_sightseeing -> image_at }} --}}
                 </a>
                 {{-- <img src="./img/photo.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""><img src="./img/example/photo.jpeg" alt=""> --}}
 
@@ -95,7 +98,8 @@
         <div id="tabpage-others">
             <!-- <div class="others-container"> -->
                 <a href="{{ route('posts.show', $post_others->id) }}">
-                    {{ $post_others -> image_at }}
+                    <img class="img-ex" src="{{ asset('storage/images/' . $post_others->image_at) }}" alt="">                    
+                    {{-- {{ $post_others -> image_at }} --}}
                 </a>
                 {{-- <img src="./img/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pancit.jpeg" alt=""> --}}
             <!-- </div> -->

@@ -33,8 +33,9 @@
      <div id="pic">
         <!-- <div class="rest-container"> -->
             <a href="{{ route('posts.show', $post->id) }}">
-                {{ $post ->image_at }}
+                {{-- {{ $post ->image_at }} --}}
             </a>
+            <img src="{{ asset('storage/images/' . $post->image_at) }}" alt="">                    
             {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""> --}}
         <!-- </div> -->
         <div class="close-btn">
@@ -56,7 +57,8 @@
      </label>
      <div id="pic">
         <!-- <div class="rest-container"> -->
-            <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt="">
+            <img src="{{ asset('storage/images/' . $post->image_at) }}" alt=""> 
+            {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""> --}}
         <!-- </div> -->
             <!-- <p class="close">close</p> -->
     </div>
