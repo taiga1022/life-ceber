@@ -62,7 +62,7 @@
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
                 <a href="{{ route('posts.show', $post->id) }}">
-                    {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
+                    {{-- <img class="img-ex" src="./img/example/pancit.jpeg" alt=""> --}}
                     <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
                     {{-- {{ $post ->image_at }} --}}
                 </a>
