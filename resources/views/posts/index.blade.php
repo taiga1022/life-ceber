@@ -45,12 +45,15 @@
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
                 <a href="{{ route('posts.show', $post->id) }}">
+                    <img src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
                     {{-- <img src="./img/example/pancit.jpeg" alt=""> --}}
-                    {{ $post ->image_at }}
+                    {{-- {{ $post ->image_at }} --}}
                 </a>
+                
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>
+        
     @endforeach
     @foreach ($posts_restaurant as $post_restaurant)
         <div id="tabpage-restaurant">

@@ -3,7 +3,7 @@
         <a href="{{ route('posts.index') }}"><p class="create-back">←戻る</p></a>
         <div class="create-container">
             <h3>新規投稿/NewPost</h3>
-            <form action="{{ route('posts.store') }}" method='POST'>
+            <form action="{{ route('posts.store') }}" method='POST' enctype="multipart/form-data">
             @csrf
                 <div class="create-title create-name">名前</div>
                 <input type="text" name='place' class="create-input" placeholder="店名・商品名・施設名など">
@@ -39,9 +39,13 @@
                 <div class="create-title create-content">内容</div>
                 <textarea name="comment" placeholder="味の感想や雰囲気など" ></textarea>
                 <p class="create-image">写真を選択</p>
+                {{-- <form method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data"></form>
+                   @csrf --}}
+                  <input id="image_at" type="file" class="image_at" name="image_at">
                 <button type="submit" class="btn-create">投稿/Post</button>
             </form>
         </div>
+        
 
         <div class="img-contents">
          <p class="guide-p">書き方参照</p>

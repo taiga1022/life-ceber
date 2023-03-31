@@ -17,6 +17,7 @@ class PostController extends Controller
         $posts_sightseeing = Post::where('genre', 'sightseeing')->get();
 
         $posts_others = Post::where('genre', 'others')->get();
+        // dd($posts);
 
         return view('posts.index', ['posts'=>$posts, 'posts_restaurant'=>$posts_restaurant, 'posts_sightseeing'=>$posts_sightseeing, 'posts_others'=>$posts_others]);
 
@@ -34,14 +35,23 @@ class PostController extends Controller
         $post = new Post;
         // $post -> title = $request -> title;
         // $post -> body = $request -> body;
-        
-        $post -> image_at = $request -> image_at;
+        $image_at = request()->file('image_at')->getClientOriginalName();
+        request()->file('image_at')->storeAs('public/images',$image_at);
+
+        $post -> image_at = $image_at;
         $post -> place = $request -> place;
         $post -> genre = $request -> genre;
         $post -> address = $request -> address;
         $post -> price = $request -> price;
         $post -> comment = $request -> comment;
 
+         //image_atをDBに保存
+         //DBのテーブル＝formからきたデータ
+
+        
+        // Post::create([
+        //     'image_at'=>$image_at,
+        // ]);
         $post -> user_id = Auth::id();
         $post -> save();
         return redirect()->route('posts.index');
