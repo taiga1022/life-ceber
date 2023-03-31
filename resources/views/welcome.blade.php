@@ -9,9 +9,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
+        {{-- jquery --}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+
         <!-- Styles -->
         <style>
-            html, body {
+            html {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -19,6 +23,20 @@
                 height: 100vh;
                 margin: 0;
             }
+            body {
+                background-image: 
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+                widows: 100vw;
+                height: 100vh;
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+            }
+          
 
             .full-height {
                 height: 100vh;
@@ -64,6 +82,7 @@
         </style>
     </head>
     <body>
+        <div class="box">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -78,23 +97,25 @@
                     @endauth
                 </div>
             @endif
+            
 
-            <div class="content">
+            <div class="content-welcome">
                 <div class="title m-b-md">
                     Life-Ceber
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
+        <script src="js/bgswitcher.js"></script>
+        <script>
+            jQuery(function($){
+                $('body').bgSwitcher({
+                    images:['./img/necessary/back.png', './img/necessary/like.png'],
+                    interval:3000,
+                    loop:true,
+                    effect:slide,
+                    duration:1000,
+                });
+            });
+        </script>
     </body>
 </html>

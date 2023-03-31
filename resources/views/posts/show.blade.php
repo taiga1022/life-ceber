@@ -29,6 +29,7 @@
         @endif
                 <div class="show-heart">♡</div>
             </div>
+            <a href="{{ route('posts.index') }}"><p>←戻る</p></a>
     </div>
 
 
