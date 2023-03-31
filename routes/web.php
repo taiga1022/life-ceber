@@ -43,3 +43,5 @@ Route::get('/mypg', 'PostController@mypg')->name('posts.mypg');
 Route::get('/posts/{post_id}favorites','LikeController@store');
 // いいねを取り消す
 Route::get('/favorites/{post_id}','LikeController@destroy');
+
+Route::get('/rate', 'RateController@index')->name('rate');
