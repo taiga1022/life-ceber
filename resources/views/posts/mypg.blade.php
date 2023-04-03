@@ -1,7 +1,7 @@
 @extends('layouts.underBar')
 @extends('layouts.sub')
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mypg.css">
-</head>
+</head> --}}
 <body>
     <header>
         <div class="mypg-header">
             <a href="{{ route('posts.index') }}"><p class="backtomain">←戻る</p></a>
-            <h1>my page</h1>
+            <h1 class="mypg">my page</h1>
             <h1></h1>
         </div>
     </header>
@@ -64,4 +64,4 @@
     </div>
 
 </body>
-</html>
+{{-- </html> --}}

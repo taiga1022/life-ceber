@@ -10985,7 +10985,7 @@ body{
 
 
 header{
-  background-color: #48A969 ;
+  background-color:  rgba(72,169,105,0.8) ;
   height: 10vh;
   display: flex;
   justify-content: right;
@@ -11011,7 +11011,7 @@ footer{
 }
 
 .under-tag{
-  background-color: #48A969;
+  background-color:  rgba(72,169,105,0.8);
   display: flex;
   justify-content: space-between;
   height: 13vh;
@@ -11210,3 +11210,4 @@ footer{
   background-color: #73D494;
 }
 
+/* home */
