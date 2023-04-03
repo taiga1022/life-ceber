@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
         <title>Life-Ceber</title>
 
@@ -10,7 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         {{-- jquery --}}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+        {{-- <link rel="stylesheet" type="text/css" href="css/vegas.min.css" /> --}}
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/vegas.min.js"></script>
         
 
         <!-- Styles -->
@@ -79,10 +84,36 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .box-welcome{
+            background-image: url(../img/necessary/back.png)
+            }
         </style>
+        <script>
+            $(function(){ 
+            $('#vegas-wrapper .bg-slider').vegas({
+            slides: [
+            { src: '../img/necessary/back.png', transition: 'fade2' },
+            { src: '../img/necessary/back.png', transition: 'fade2' },
+            { src: '../img/necessary/back.png', transition: 'fade2' },
+            { src: '../img/necessary/back.png', transition: 'fade2' }
+            ],
+            
+            transitionDuration: 2000, //スライドの遷移アニメーションの時間
+            delay: 5000, //スライド切り替え時の遅延時間
+            animationDuration: 10000, //スライド表示中のアニメーションの時間
+            loop: true,
+            });
+
+});
+        </script>
     </head>
     <body>
-        <div class="box">
+        <div class="vegas-wrap">
+            <div class="bg-slider">
+            </div>
+            </div>
+        {{-- <img decoding="slide" id="pic" src="../img/necessary/back.png" alt="" width="390" height="800"> --}}
+        <div class="box-welcome">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -105,17 +136,5 @@
                 </div>
             </div>
         </div>
-        <script src="js/bgswitcher.js"></script>
-        <script>
-            jQuery(function($){
-                $('body').bgSwitcher({
-                    images:['./img/necessary/back.png', './img/necessary/like.png'],
-                    interval:3000,
-                    loop:true,
-                    effect:slide,
-                    duration:1000,
-                });
-            });
-        </script>
     </body>
 </html>

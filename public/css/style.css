@@ -615,3 +615,25 @@ h2{
 .show-edit{
     margin-right: 1vw;
 }
+
+/* 為替 */
+.rateh1{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    background-color:rgba(72, 169, 105, 0.7);
+}
+
+.rate{
+    font-size: 25px;
+}
+
+.etd{
+    /* background-color: #3CB371; */
+    margin: auto;
+}
+
+.backtomain-rate{
+    margin-left: 10px;
+    color:black;
+}

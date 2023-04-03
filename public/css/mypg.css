@@ -13,9 +13,12 @@ header h1{
     font-weight: 100;
     /* text-align:center */
 }
-/* .backtomain{
-  margin-right: 30px;
-} */
+.backtomain{
+  color: black;
+  margin-top: 20px;
+  margin-left: 5px;
+
+}
 
 .mypg-header{
     /* background-color: black; */
@@ -23,12 +26,16 @@ header h1{
     align-items: center;
     justify-content: space-between;
     width:100%;
-    margin: 3%;
+    /* margin: 3%; */
     /* margin: auto; */
     /* height: 7vh; */
     /* margin: 0 10px 0 10px; */
 }
-
+.mypg{
+  /* background-color: rgb(25, 93, 152); */
+  margin-right: 40px;
+  color: white;
+}
 
 body{
     margin: 0;
