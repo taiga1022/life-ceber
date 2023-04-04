@@ -6,13 +6,28 @@
     min-height: 100vh;
     /* position: fixed; */
 }
-
-#tabpage-all{
-    /* background-color: aqua; */
+#tabbody{
+    /* background-color: #3CB371; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
 }
+
+/* @media (min-width: 768px){
+    #tabbody{
+        display: flex;
+        justify-content: center;
+    }
+  } */
+
+
+/* #tabpage-all{
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */ 
 
 @media (min-width: 768px){
     #tabpage-all{
@@ -58,8 +73,9 @@
 }
 @media (min-width: 768px){
     .img-ex{
-        width: 294px;
-        height: 294px;
+        width: 354px;
+        height: 354px;
+        margin: 1px 1px 1px 1px;
     }
   }
 
