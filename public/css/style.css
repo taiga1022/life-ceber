@@ -1,11 +1,10 @@
 /* index */
 .mainlogo{
     position: relative;
-    top:7px;
-    left:-4px;
-
-    
+    top:6px;
+    left:-2px;
 }
+
 #body-index{
     margin: 0;
     background: url("../img/necessary/back.png") ;
@@ -13,19 +12,48 @@
     min-height: 100vh;
     /* position: fixed; */
 }
-
-#tabpage-all{
-    /* background-color: aqua; */
+#tabbody{
+    /* background-color: #3CB371; */
     display: flex;
-    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
 }
+
+/* @media (min-width: 768px){
+    #tabbody{
+        display: flex;
+        justify-content: center;
+    }
+  } */
+
+
+/* #tabpage-all{
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */ 
+
+@media (min-width: 768px){
+    #tabpage-all{
+        margin-left: 3px;
+    }
+    #tabpage-restaurant{
+        margin-left: 3px;
+    }
+    #tabpage-sightseeing{
+        margin-left: 3px;
+    }
+    #tabpage-others{
+        margin-left: 3px;
+    }
+  }
+
 
 #tabpage-restaurant{
     /* background-color: aqua; */
     display: flex;
-    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -33,7 +61,6 @@
 #tabpage-sightseeing{
     /* background-color: aqua; */
     display: flex;
-    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -41,7 +68,6 @@
 #tabpage-others{
     /* background-color: aqua; */
     display: flex;
-    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -53,8 +79,9 @@
 }
 @media (min-width: 768px){
     .img-ex{
-        width: 294px;
-        height: 294px;
+        width: 354px;
+        height: 354px;
+        margin: 1px 1px 1px 1px;
     }
   }
 
@@ -598,6 +625,11 @@ img{
         width: 700px;
         margin: auto;
     }
+}
+.p-back{
+    text-align: center;
+    margin: 10px;
+    color: #48A969;
 }
 
 h2{
