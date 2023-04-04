@@ -35,19 +35,19 @@
     </div>
     @section('content')
     <div class="stickers">
+      <img class="map" src="../img/necessary/stamps/map.jpg" alt="マップ">
       <img class="bal" src="../img/necessary/stamps/bal.jpg" alt="バロット">
       <img class="boh" src="../img/necessary/stamps/boh.jpg" alt="ボホール">
       <img class="ih" src="../img/necessary/stamps/ih.jpg" alt="島">
       <img class="ils" src="../img/necessary/stamps/ils.jpg" alt="島">
       <img class="mall" src="../img/necessary/stamps/mall.jpg" alt="モール">
-      <img class="map" src="../img/necessary/stamps/map.jpg" alt="マップ">
       <img class="moji" src="../img/necessary/stamps/moji.jpg" alt="シシグ">
       <img class="pc" src="../img/necessary/stamps/pc.jpg" alt="パンシット">
       <img class="todo" src="../img/necessary/stamps/todo.jpg" alt="やること">
       <img class="sm" src="../img/necessary/stamps/sm.jpg" alt="ビール">
       <img class="hw" src="../img/necessary/stamps/hw.jpg" alt="宿題">
       {{-- <img class="main-logo" src="../img/necessary/stamps/hw.jpg" alt="宿題"> --}}
-      <p class="main-logo"></p>
+      <img class="main-logo" src="../img/necessary/stamps/logo.png" alt="logo">
       {{-- ↑にメインロゴを入れる！ --}}
 
     </div>
