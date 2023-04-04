@@ -69,6 +69,13 @@ body{
     color: grey;
     /* padding: 20px; */
   }
+  @media (min-width: 768px){
+    .label{
+      background: url(../img/necessary/mypgres.png);
+      width: 490px;
+      height: 390px;
+    }
+  }
 
 
   .see-more{
@@ -80,6 +87,17 @@ body{
 
   .center{
     margin: 50px 0 20px 0;
+  }
+  @media (min-width: 768px){
+    .center{
+      font-size: 50px;
+      margin: 100px 0 20px 0;
+    }
+  }
+  @media (min-width: 768px){
+    .seemore{
+      font-size: 30px;
+    }
   }
   
   /* クリック時に表示されるテキスト */
@@ -94,7 +112,7 @@ body{
     width: 290px;
     transition: 0.5s;
     margin:auto;
-  
+    display: flex;
   }
   
   /* クリック時のスタイル */
@@ -102,14 +120,28 @@ body{
     height: auto;
     width: 290px;
     background-color: rgba(72,169,105,0.6);
+    margin-bottom: 60px;
     /* padding: 20px; */
   }
+  @media (min-width: 768px){
+    .check:checked + .label + #pic{
+      width: 490px;
+    }
+  }
 
-  img{
+  .mypg-img{
     width: 133px;
     height: 133px;
     margin: 6px 6px 6px 6px;
 }
+@media (min-width: 768px){
+  .mypg-img{
+    width: 233px;
+    height: 233px;
+  }
+}
+
+
 
 #pic{
     /* background-color: aqua; */

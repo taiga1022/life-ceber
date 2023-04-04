@@ -40,7 +40,12 @@
     height: 194px;
     margin: 0px 1px 1px 0px;
 }
-
+@media (min-width: 768px){
+    .img-ex{
+        width: 294px;
+        height: 294px;
+    }
+  }
 
 #tabbody div{
     position: relative;
@@ -50,7 +55,13 @@
 #tabcontrol{
     margin: 0%;
     opacity: 0.7;
-
+}
+@media (min-width: 768px){
+    #tabcontrol{
+        margin-top: 7%;
+        margin-left: 3px;
+        opacity: 0.7;
+    }
 }
 
 #tabcontrol a{
@@ -66,6 +77,14 @@
     background-color:rgba(72, 169, 105, 0.7);
     color: black;
     position: relative;
+}
+@media (min-width: 768px){
+    #tabcontrol a{
+        width: 180px;
+        height: 7vh;
+        padding-top: 15px;
+        font-size: 20px;
+    }
 }
 
 #tabcontrol a:hover{
@@ -543,14 +562,31 @@ img{
     width: 90%;
     height: 40vh;
     margin-top: 2vh;
-
 }
+@media (min-width: 768px){
+    .show-img{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+.showh{
+    font-size: 15px;
+    margin: 10px;
+}
+
 
 .show-container{
     text-align: center;
     background-color: #93D6B1;
     border-radius: 2%;
     border:6px solid #3CB371;
+}
+@media (min-width: 768px){
+    .show-container{
+        width: 700px;
+        margin: auto;
+    }
 }
 
 h2{
@@ -575,7 +611,12 @@ h2{
     margin-top: 2vh;
     background-color: white;
     border: none;
-    
+}
+@media (min-width: 768px){
+    .show-text{
+        width: 600px;
+        margin-top: 3%;
+    }
 }
 
 .s1 {
@@ -605,6 +646,16 @@ h2{
     box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
     list-style: none;
 }
+@media (min-width: 576px) {
+    .show-edit {
+      width: 100px;
+    }
+  
+    .show-delete {
+      width: 100px;
+    }
+  
+  }
 
 .under{
     display: flex;

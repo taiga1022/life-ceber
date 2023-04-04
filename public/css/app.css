@@ -11026,10 +11026,27 @@ footer{
   height: 10vh;
   padding: 15px;
 }
+@media (min-width: 768px){
+  .under-tag{
+    justify-content: center;
+  }
+  .under1{
+    margin: 10px 40px auto 40px;
+  }
+  .writing{
+    /* margin-top: 20px; */
+    width: 20vh;
+    height: 20vh;
+    /* padding: 0px;
+    margin-bottom: 35px; */
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 
 .writing{
-  width: 10vh;
-  height: 10vh;
+  width: 10.5vh;
+  height: 10.5vh;
   padding: 15px;
   margin-top: 10%;
 }
@@ -11054,6 +11071,14 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .bal{
+    width: 200px;
+    height: 60px;
+    top: 29%;
+    left: 18%;
+  }
+}
 @keyframes fadeIn{
   0%{
     opacity: 0;
@@ -11077,6 +11102,18 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+
+@media (min-width: 768px){
+  .boh{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    opacity: 0;
+  }
+}
+
 .ih{
   width: 100px;
   height: 30px;
@@ -11090,6 +11127,14 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .ih{
+    width: 200px;
+    height: 60px;
+    left: 60%;
+  }
+}
+
 .ils{
   width: 100px;
   height: 100px;
@@ -11103,6 +11148,14 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .ils{
+    width: 200px;
+    height: 200px;
+    right: 10%;
+  }
+}
+
 .mall{
   width: 100px;
   height: 73px;
@@ -11115,6 +11168,13 @@ footer{
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
+}
+@media (min-width: 768px){
+  .mall{
+    width: 200px;
+    height: 146px;
+    right: 19%;
+  }
 }
 .map{
   width: 100px;
@@ -11129,6 +11189,14 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .map{
+    width: 200px;
+    height: 200px;
+    left: 15%;
+  }
+}
+
 .moji{
   width: 100px;
   height: 30px;
@@ -11142,6 +11210,14 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .moji{
+    width: 200px;
+    height: 60px;
+    left: 25%;
+  }
+}
+
 .pc{
   width: 100px;
   height: 30px;
@@ -11155,6 +11231,13 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .pc{
+    width: 200px;
+    height: 60px;
+  }
+}
+
 .todo{
   width: 100px;
   height: 100px;
@@ -11166,6 +11249,13 @@ footer{
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
+}
+@media (min-width: 768px){
+  .todo{
+    width: 200px;
+    height: 200px;
+    right: 15%;
+  }
 }
 .hw{
   width: 100px;
@@ -11180,6 +11270,13 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
+@media (min-width: 768px){
+  .hw{
+    width: 200px;
+    height: 200px;
+    right: 30%;
+  }
+}
 .sm{
   width: 100px;
   height: 72px;
@@ -11192,6 +11289,13 @@ footer{
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
+}
+@media (min-width: 768px){
+  .sm{
+    width: 200px;
+    height: 144px;
+    left: 25%;
+  }
 }
 
 .main-logo{
@@ -11208,6 +11312,13 @@ footer{
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
   background-color: #73D494;
+}
+@media (min-width: 768px){
+  .main-logo{
+    width: 380px;
+    height: 230px;
+    left: 35%;
+  }
 }
 
 /* home */
