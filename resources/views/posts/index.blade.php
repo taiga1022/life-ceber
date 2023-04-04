@@ -47,7 +47,7 @@
       <img class="sm" src="../img/necessary/stamps/sm.jpg" alt="ビール">
       <img class="hw" src="../img/necessary/stamps/hw.jpg" alt="宿題">
       {{-- <img class="main-logo" src="../img/necessary/stamps/hw.jpg" alt="宿題"> --}}
-      <p class="main-logo"></p>
+      <img class="main-logo" src="../img/necessary/stamps/logo.png" alt="title">
       {{-- ↑にメインロゴを入れる！ --}}
 
     </div>

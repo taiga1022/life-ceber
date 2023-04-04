@@ -9,7 +9,8 @@
 
 #tabpage-all{
     /* background-color: aqua; */
-    display: flex;
+    /* display: flex; */
+    float: left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
