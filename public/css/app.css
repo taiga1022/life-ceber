@@ -1312,7 +1312,7 @@ pre code {
   }
 
   .offset-md-4 {
-    margin-left: 33.33333333%;
+    margin-left: 17%;
   }
 
   .offset-md-5 {
@@ -2687,11 +2687,12 @@ fieldset:disabled a.btn {
   color: #fff;
   /* background-color: #3490dc; */
   border-color: #48A969;
+  display: flex;
 }
 
 @media (min-width: 576px){
   .btn-primary{
-    margin-left:20% ;
+    margin: ;
   }
 }
 
@@ -10952,6 +10953,7 @@ a.text-dark:focus {
 
 .card-header{
   font-size: 30px;
+  margin-top: 30px;
 }
 
 .col-md-4{
@@ -10972,6 +10974,7 @@ a.text-dark:focus {
 .btn-primary{
   background-color: white;
   color: #48A969;
+  margin: auto;
 }
 .btn-primary:hover{
   background-color:#48A969;
@@ -11048,7 +11051,7 @@ footer{
   width: 10.5vh;
   height: 10.5vh;
   padding: 15px;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 
