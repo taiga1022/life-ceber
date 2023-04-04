@@ -11113,8 +11113,8 @@ footer{
     width: 200px;
     height: 60px;
     position: absolute;
-    left: 20%;
-    top: 20%;
+    left: 34%;
+    top: 55%;
     opacity: 0;
   }
 }
@@ -11137,7 +11137,8 @@ footer{
   .ih{
     width: 200px;
     height: 60px;
-    left: 60%;
+    left: 35%;
+    top:63%;
   }
 }
 
@@ -11160,6 +11161,7 @@ footer{
     width: 200px;
     height: 200px;
     right: 10%;
+    top:32%;
   }
 }
 
@@ -11225,6 +11227,7 @@ footer{
     width: 200px;
     height: 60px;
     left: 25%;
+    top:10%;
   }
 }
 
@@ -11232,8 +11235,8 @@ footer{
   width: 150px;
   height: 45px;
   position: absolute;
-  left: 30%;
-  top: 50%;
+  left: 8%;
+  top: 14%;
   border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
@@ -11246,6 +11249,8 @@ footer{
   .pc{
     width: 200px;
     height: 60px;
+    top:20%;
+    left:15%;
   }
 }
 
@@ -11268,6 +11273,7 @@ footer{
     width: 200px;
     height: 200px;
     right: 15%;
+    top:10%;
   }
 }
 .hw{
@@ -11289,6 +11295,7 @@ footer{
     width: 200px;
     height: 200px;
     right: 30%;
+    top:40%;
   }
 }
 .sm{
@@ -11335,6 +11342,7 @@ footer{
     width: 380px;
     height: 230px;
     left: 35%;
+    top:20%;
   }
 }
 
