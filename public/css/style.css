@@ -1,4 +1,11 @@
 /* index */
+.mainlogo{
+    position: relative;
+    top:7px;
+    left:-4px;
+
+    
+}
 #body-index{
     margin: 0;
     background: url("../img/necessary/back.png") ;
