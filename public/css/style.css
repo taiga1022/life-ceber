@@ -10,6 +10,7 @@
 #tabpage-all{
     /* background-color: aqua; */
     display: flex;
+    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -17,6 +18,7 @@
 #tabpage-restaurant{
     /* background-color: aqua; */
     display: flex;
+    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -24,6 +26,7 @@
 #tabpage-sightseeing{
     /* background-color: aqua; */
     display: flex;
+    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -31,6 +34,7 @@
 #tabpage-others{
     /* background-color: aqua; */
     display: flex;
+    float:left;
     flex-wrap: wrap;
     justify-content: space-between;
 }
