@@ -24,8 +24,8 @@
         <div class="p-container">
           <p class="center">my gallery</p>
           <div class="see-more">
-            <p >see more</p>
-            <p >↓</p>
+            <p class="seemore">see more</p>
+            <p class="seemore">↓</p>
            </div>
         </div>
      </label>
@@ -35,7 +35,7 @@
             <a href="{{ route('posts.show', $post->id) }}">
                 {{-- {{ $post ->image_at }} --}}
             </a>
-            <img src="{{ asset('storage/images/' . $post->image_at) }}" alt="">                    
+            <img class="mypg-img" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">                    
             {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""> --}}
         <!-- </div> -->
         <div class="close-btn">
@@ -50,14 +50,14 @@
         <div class="p-container">
             <p class="center">likes</p>
             <div class="see-more">
-             <p >see more</p>
-             <p >↓</p>
+             <p class="seemore">see more</p>
+             <p class="seemore">↓</p>
             </div>
           </div>
      </label>
      <div id="pic">
         <!-- <div class="rest-container"> -->
-            <img src="{{ asset('storage/images/' . $post->image_at) }}" alt=""> 
+            <img class="mypg-img" src="{{ asset('storage/images/' . $post->image_at) }}" alt=""> 
             {{-- <img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""><img src="./img/krend.jpeg" alt=""> --}}
         <!-- </div> -->
             <!-- <p class="close">close</p> -->
