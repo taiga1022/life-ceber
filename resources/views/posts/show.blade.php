@@ -29,7 +29,7 @@
                 </form>
         @endif
             </div>
-            <a href="{{ route('posts.index') }}"><p>←戻る</p></a>
+            <a href="{{ route('posts.index') }}"><p class="p-back">←戻る</p></a>
     </div>
 
 
