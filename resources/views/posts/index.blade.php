@@ -47,7 +47,7 @@
       <img class="sm" src="../img/necessary/stamps/sm.jpg" alt="ビール">
       <img class="hw" src="../img/necessary/stamps/hw.jpg" alt="宿題">
       {{-- <img class="main-logo" src="../img/necessary/stamps/hw.jpg" alt="宿題"> --}}
-      <p class="main-logo"></p>
+      <img class="main-logo" src="../img/necessary/stamps/logo.png" alt="title">
       {{-- ↑にメインロゴを入れる！ --}}
 
     </div>
@@ -61,11 +61,11 @@
     @foreach ($posts as $post)
         <div id="tabpage-all">
             <!-- <div class="all-container"> -->
-                <a href="{{ route('posts.show', $post->id) }}">
+           <a href="{{ route('posts.show', $post->id) }}">
                     {{-- <img class="img-ex" src="./img/example/pancit.jpeg" alt=""> --}}
-                    <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
+           <img class="img-ex" src="{{ asset('storage/images/' . $post->image_at) }}" alt="">
                     {{-- {{ $post ->image_at }} --}}
-                </a>
+           </a>
                 {{-- <img src="./img/example/pancit.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/krend.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""><img src="./img/example/pine.jpeg" alt=""> --}}
             <!-- </div> -->
         </div>

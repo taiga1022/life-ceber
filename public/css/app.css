@@ -11093,14 +11093,14 @@ footer{
 
 
 .boh{
-  width: 100px;
-  height: 30px;
-  position: absolute;
-  left: 5%;
-  top: 16%;
+  width: 160px;
+  height: 55px;
+  position: absolute;   
+  left: 20%;
+  top: 37%;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 0.3s;
+  animation-delay : 2.0s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11118,14 +11118,14 @@ footer{
 }
 
 .ih{
-  width: 100px;
-  height: 30px;
+  width: 160px;
+  height: 55px;
   position: absolute;
-  left: 3%;
-  top: 12%;
+  left: 30%;
+  top: 44%;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 1.5s;
+  animation-delay : 1s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11139,8 +11139,8 @@ footer{
 }
 
 .ils{
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   position: absolute;
   right: 1%;
   top: 28%;
@@ -11180,8 +11180,8 @@ footer{
   }
 }
 .map{
-  width: 100px;
-  height: 100px;
+  width: 115x;
+  height: 115px;
   position: absolute;
   left: 2%;
   top: 35%;
@@ -11201,14 +11201,15 @@ footer{
 }
 
 .moji{
-  width: 100px;
-  height: 30px;
+  width: 160px;
+  height: 55px;
   position: absolute;
   left: 30%;
-  top: 44%;
+  left: 3%;
+  top: 12%;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 1s;
+  animation-delay : 1.5s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11222,14 +11223,14 @@ footer{
 }
 
 .pc{
-  width: 100px;
-  height: 30px;
+  width: 160px;
+  height: 55px;
   position: absolute;
-  left: 20%;
-  top: 40%;
+  left: 5%;
+  top: 16%;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 2.0s;
+  animation-delay : 0.3s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11242,10 +11243,11 @@ footer{
 }
 
 .todo{
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   position: absolute;
   right: 4%;
+  top:7%;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.2s;
@@ -11261,8 +11263,8 @@ footer{
   }
 }
 .hw{
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   position: absolute;
   right: 25%;
   top: 30%;
@@ -11281,8 +11283,8 @@ footer{
   }
 }
 .sm{
-  width: 100px;
-  height: 72px;
+  width: 120px;
+  height: 82px;
   position: absolute;
   right: 25%;
   top: 12%;
