@@ -11057,16 +11057,17 @@ footer{
 
 /* indexの付箋部分 */
 .stickers{
-  height: 350px;
+  height: 330px;
   /* background-color: pink; */
   margin-bottom: 10px;
 }
 .bal{
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 45px;
   position: absolute;
   left: 2%;
   top: 20%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.8s;
@@ -11093,14 +11094,15 @@ footer{
 
 
 .boh{
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
   position: absolute;
-  left: 5%;
-  top: 16%;
+  left: 31%;
+  top: 37%;    
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 0.3s;
+  animation-delay : 2.0s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11111,21 +11113,22 @@ footer{
     width: 200px;
     height: 60px;
     position: absolute;
-    left: 20%;
-    top: 20%;
+    left: 34%;
+    top: 55%;
     opacity: 0;
   }
 }
 
 .ih{
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
   position: absolute;
-  left: 3%;
-  top: 12%;
+  left: 28%;
+  top: 44%;   
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 1.5s;
+  animation-delay : 1s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11134,16 +11137,18 @@ footer{
   .ih{
     width: 200px;
     height: 60px;
-    left: 60%;
+    left: 35%;
+    top:63%;
   }
 }
 
 .ils{
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   position: absolute;
   right: 1%;
   top: 28%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.9s;
@@ -11156,15 +11161,17 @@ footer{
     width: 200px;
     height: 200px;
     right: 10%;
+    top:32%;
   }
 }
 
 .mall{
-  width: 100px;
-  height: 73px;
+  width: 115px;
+  height: 83px;
   position: absolute;
   right: 4%;
   top: 38%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.8s;
@@ -11180,11 +11187,12 @@ footer{
   }
 }
 .map{
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   position: absolute;
   left: 2%;
   top: 35%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 0.8s;
@@ -11201,14 +11209,15 @@ footer{
 }
 
 .moji{
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 45px;
   position: absolute;
-  left: 30%;
-  top: 44%;
+  left: 2%;
+  top: 8%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 1s;
+  animation-delay : 1.5s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11218,18 +11227,20 @@ footer{
     width: 200px;
     height: 60px;
     left: 25%;
+    top:10%;
   }
 }
 
 .pc{
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 45px;
   position: absolute;
-  left: 20%;
-  top: 40%;
+  left: 8%;
+  top: 14%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
-  animation-delay : 2.0s;
+  animation-delay : 0.3s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
@@ -11238,14 +11249,18 @@ footer{
   .pc{
     width: 200px;
     height: 60px;
+    top:20%;
+    left:15%;
   }
 }
 
 .todo{
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   position: absolute;
   right: 4%;
+  top: 9%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.2s;
@@ -11258,14 +11273,16 @@ footer{
     width: 200px;
     height: 200px;
     right: 15%;
+    top:10%;
   }
 }
 .hw{
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   position: absolute;
   right: 25%;
   top: 30%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 0.5s;
@@ -11278,26 +11295,29 @@ footer{
     width: 200px;
     height: 200px;
     right: 30%;
+    top:40%;
   }
 }
 .sm{
-  width: 100px;
-  height: 72px;
+  width: 120px;
+  height: 82px;
   position: absolute;
   right: 25%;
-  top: 12%;
+  top: 13%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.5s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
+
 }
 @media (min-width: 768px){
   .sm{
     width: 200px;
     height: 144px;
-    left: 25%;
+    left: 55%;
   }
 }
 
@@ -11307,7 +11327,8 @@ footer{
   position: absolute;
   left: 20%;
   top: 20%;
-  transform: rotate(-3deg);
+  animation-name: fadeIn;
+  transform: rotate(-4deg);
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 2.2s;
@@ -11321,6 +11342,7 @@ footer{
     width: 380px;
     height: 230px;
     left: 35%;
+    top:20%;
   }
 }
 
