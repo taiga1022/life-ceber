@@ -11067,6 +11067,7 @@ footer{
   position: absolute;
   left: 2%;
   top: 20%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.8s;
@@ -11096,8 +11097,9 @@ footer{
   width: 150px;
   height: 50px;
   position: absolute;
-  left: 28%;
-  top: 37%;
+  left: 31%;
+  top: 37%;    
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 2.0s;
@@ -11122,7 +11124,8 @@ footer{
   height: 50px;
   position: absolute;
   left: 28%;
-  top: 44%;
+  top: 44%;   
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1s;
@@ -11144,6 +11147,7 @@ footer{
   position: absolute;
   right: 1%;
   top: 28%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.9s;
@@ -11160,11 +11164,12 @@ footer{
 }
 
 .mall{
-  width: 100px;
-  height: 73px;
+  width: 115px;
+  height: 83px;
   position: absolute;
   right: 4%;
   top: 38%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.8s;
@@ -11180,11 +11185,12 @@ footer{
   }
 }
 .map{
-  width: 115px;
-  height: 115px;
+  width: 125px;
+  height: 125px;
   position: absolute;
   left: 2%;
   top: 35%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 0.8s;
@@ -11204,8 +11210,9 @@ footer{
   width: 150px;
   height: 45px;
   position: absolute;
-  left: 10%;
+  left: 2%;
   top: 8%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.5s;
@@ -11227,6 +11234,7 @@ footer{
   position: absolute;
   left: 6%;
   top: 14%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 0.3s;
@@ -11242,10 +11250,12 @@ footer{
 }
 
 .todo{
-  width: 115px;
-  height: 115px;
+  width: 125px;
+  height: 125px;
   position: absolute;
   right: 4%;
+  top: 7%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.2s;
@@ -11266,6 +11276,7 @@ footer{
   position: absolute;
   right: 25%;
   top: 30%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 0.5s;
@@ -11286,12 +11297,14 @@ footer{
   position: absolute;
   right: 25%;
   top: 12%;
+  border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 1.5s;
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
+
 }
 @media (min-width: 768px){
   .sm{
@@ -11307,7 +11320,8 @@ footer{
   position: absolute;
   left: 20%;
   top: 20%;
-  transform: rotate(-3deg);
+  animation-name: fadeIn;
+  transform: rotate(-4deg);
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
   animation-delay : 2.2s;
