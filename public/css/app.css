@@ -11232,8 +11232,8 @@ footer{
   width: 150px;
   height: 45px;
   position: absolute;
-  left: 6%;
-  top: 14%;
+  left: 30%;
+  top: 50%;
   border: 0.1px solid #DDDDDD	;
   opacity: 0;/* ここを追加 */
   animation-duration: 2s;
@@ -11310,7 +11310,7 @@ footer{
   .sm{
     width: 200px;
     height: 144px;
-    left: 25%;
+    left: 55%;
   }
 }
 
