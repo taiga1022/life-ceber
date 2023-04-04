@@ -14,6 +14,22 @@
     justify-content: space-between;
 }
 
+@media (min-width: 768px){
+    #tabpage-all{
+        margin-left: 3px;
+    }
+    #tabpage-restaurant{
+        margin-left: 3px;
+    }
+    #tabpage-sightseeing{
+        margin-left: 3px;
+    }
+    #tabpage-others{
+        margin-left: 3px;
+    }
+  }
+
+
 #tabpage-restaurant{
     /* background-color: aqua; */
     display: flex;
@@ -587,6 +603,11 @@ img{
         width: 700px;
         margin: auto;
     }
+}
+.p-back{
+    text-align: center;
+    margin: 10px;
+    color: #48A969;
 }
 
 h2{
