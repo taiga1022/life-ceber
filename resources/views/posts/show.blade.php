@@ -10,8 +10,10 @@
         <h1 class="showh">{{ $post -> place }}</h1>
         <h2 class="showh">{{ $post -> address }}</h2>
         <hr noshade class="show-line" >
-        <div class="show-text">     
+        <div class="show-text"> 
+            <div class="show-letter">    
             {{ $post -> comment }}
+            </div>  
         </div>
         <div class="s1">
             <ul class="s2">

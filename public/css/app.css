@@ -8347,7 +8347,7 @@ button.bg-dark:focus {
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem #48A969 !important;
-  z-index: 999;
+  z-index: 800;
 }
 
 .shadow {
